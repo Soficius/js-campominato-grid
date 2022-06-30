@@ -15,7 +15,7 @@ header{
     height: 100px;
     background-color: aqua;
 }
-button{
+#start{
     position: fixed;
     top:40px;
     right: 50%;
@@ -26,15 +26,14 @@ button{
     color: white;
 }
 
-.grid{
-    border: 1px solid black;
+#grid{
     height: 500px;
     width: 500px;
     margin:  50px 500px; 
     display: flex;
     flex-wrap: wrap;
 }
-.grid .cell{
+#grid .cell{
     height: calc(100% / 10);
     width: calc(100% / 10);
     border: 1px solid black;
