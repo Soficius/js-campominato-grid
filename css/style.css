@@ -29,12 +29,22 @@ header{
 #grid{
     height: 500px;
     width: 500px;
-    margin:  50px 500px; 
     display: flex;
     flex-wrap: wrap;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-40%);
 }
 #grid .cell{
     height: calc(100% / 10);
     width: calc(100% / 10);
     border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.azure{
+    background-color: rgba(0, 128, 207, 0.808);
+    color: white;
 }
