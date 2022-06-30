@@ -5,8 +5,7 @@
 // Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed emetto un messaggio in console con il numero della cella cliccata.
 // Procediamo milestone per milestone senza invertire l'ordine.
 // Cerchiamo di fare almeno un commit per ogni milestone!
-
-// function 
+ 
 
 //* 1.3. funzione per creare una celle
 function getCell(num){
