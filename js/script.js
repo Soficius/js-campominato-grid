@@ -1,12 +1,3 @@
-// Consegna
-// L'utente clicca su un bottone che genererà una griglia di gioco quadrata.
-// Ogni cella ha un numero progressivo, da 1 a 100.
-// Ci saranno quindi 10 caselle per ognuna delle 10 righe.
-// Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed emetto un messaggio in console con il numero della cella cliccata.
-// Procediamo milestone per milestone senza invertire l'ordine.
-// Cerchiamo di fare almeno un commit per ogni milestone!
- 
-
 //* 1.3. funzione per creare una celle
 function getNewCell(num){
     const cell = document.createElement('div');
@@ -24,11 +15,14 @@ function colorizeCell(e){
 }
 
 
-//* 1. mi metto in ascolta sul btn per la creazione della griglia
+//* 1. mi metto in ascolto sul btn per la creazione della griglia
 document.getElementById('start').addEventListener('click', function(){
     //* 1.1. prendo l'elemento griglia
     const grid = document.getElementById('grid');
-    
+    //* rimuovo eventuali celle preesistenti
+    while (grid.firstChild) {
+        grid.removeChild(grid.lastChild)
+    }
     //* 1.2. devo creare una griglia di 100 celle divisa in 10 colonne e 10 righe 
     const rows = 10;
     const cols = 10;

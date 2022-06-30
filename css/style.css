@@ -15,10 +15,13 @@ header{
     height: 100px;
     background-color: aqua;
 }
-#start{
+#hcont{
     position: fixed;
     top:40px;
-    right: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+#start{
     padding: 6px 6px;
     border-radius: 30px;
     background-color: blue;
