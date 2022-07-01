@@ -15,7 +15,7 @@ header{
     height: 100px;
     background-color: aqua;
 }
-#hcont{
+#hcont, .top-fixed{
     position: fixed;
     top:40px;
     left: 50%;
@@ -39,9 +39,25 @@ header{
     left: 50%;
     transform: translate(-50%,-40%);
 }
-#grid .cell{
+#grid .cell10x10,#grid .cell{
     height: calc(100% / 10);
     width: calc(100% / 10);
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#grid .cell9x9{
+    height: calc(100% / 9);
+    width: calc(100% / 9);
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#grid .cell7x7{
+    height: calc(100% / 7);
+    width: calc(100% / 7);
     border: 1px solid black;
     display: flex;
     justify-content: center;
